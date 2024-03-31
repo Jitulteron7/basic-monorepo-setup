@@ -1,0 +1,14 @@
+import express from 'express';
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.json({
+    message: 'hello world',
+  });
+});
+
+app.listen(8091,()=>{
+  console.log('Listening to port',8091);
+  
+});
